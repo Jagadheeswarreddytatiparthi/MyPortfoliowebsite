@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/0557d6f85b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+      <div class="container">
+		<nav>
+			<img src="images/logo.png.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p>UI/UX Designer</p>
+			<h1>Hi, I'm <span>Jagadheeswarreddy</span><br>From Andhra Pradesh </h1>
+		</div>
+	  </div>
+</div>
+<!---------------About----------->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/user.png">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>Hi, I'm Jagadheeswar Reddy Tatiparthi, a passionate UI/UX Designer and Web Developer
+				 dedicated to creating intuitive, user-friendly digital experiences. With a strong 
+				 foundation in programming languages like Python, HTML, CSS, Java, and SQL, I specialize
+				 in crafting responsive websites and seamless user interfaces that enhance user engagement.
+
+				 I bring expertise in tools and technologies such as VSCode, Git/GitHub, and design 
+				 principles, combining technical skills with creative problem-solving to deliver 
+				 impactful solutions.</p>
+				 <div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links"  onclick="opentab('experience')">Experience</p>
+					<p class="tab-links"  onclick="opentab('education')">Education</p>
+				 </div>
+				 <div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+						<li><span>Web Development</span><br>Web App Development</li>
+						<li><span>App Development</span><br>Building Android/IOS apps</li>
+						<li><span>Logo Designing</span><br>Customized LOGO Designing</li>
+					</ul>
+				 </div>
+				 <div class="tab-contents" id="experience">
+					<ul>
+						<li><span>2024-current</span><br>UI/UX Design Training at NareshIT Technologies</li>
+						<li><span>2023-2024</span><br>Web App Development at Pragati Engineering College</li>
+						<li><span>2022-2023</span><br>AWS Cloud Virtual Internship</li>
+					</ul>
+				 </div>
+				 <div class="tab-contents" id="education">
+					<ul>
+						<li><span>2020-2024</span><br>ECE at Pragati Engineering College.</li>
+						<li><span>2018-2020</span><br>M.pi.c at Sri Chaitanya Junior College</li>
+						<li><span>2017-2018</span><br>10th at MRR High School.</li>
+						
+					</ul>
+				 </div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-----------------services--------------------->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Web Design</h2>
+				<p>Crafting visually stunning, user-friendly, and responsive websites that blend creativity with functionality.
+					I focus on delivering designs that enhance user experience and effectively communicate brand identity.
+					From conceptualization to implementation, my goal is to create digital spaces that leave a lasting impression.</p>
+					<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-users-rectangle"></i>
+				<h2>UI/UX Design</h2>
+				<p>Designing intuitive and engaging user interfaces that prioritize seamless user experiences. 
+					I specialize in creating wireframes, prototypes, and user flows that enhance usability and
+					 align with user needs. By combining research-driven insights with creative problem-solving, I craft designs that are visually appealing, functional, and accessible.</p>
+					<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-app-store"></i>
+				<h2>App Design</h2>
+				<p>Designing dynamic and user-centric mobile applications that deliver exceptional performance and seamless experiences. 
+					My approach focuses on creating visually appealing interfaces, intuitive navigation, and responsive layouts tailored to diverse platforms.
+					 From concept to completion, I aim to craft apps that meet user needs and stand out in the digital landscape.</p>
+					<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-font-awesome"></i>
+				<h2>Logo Design</h2>
+				<p>Creating unique and customized logo designs that capture the essence of your brand. 
+					I focus on blending creativity with strategic design to deliver logos that are memorable, versatile, and impactful. 
+					Each design is tailored to reflect your brand's identity and resonate with your target audience, ensuring a lasting impression.
+
+				</p>
+					<a href="#">Learn more</a>
+			
+		</div>
+	</div>
+
+</div>
+<!--------------------------portfolio---------------------->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/work-1.png">
+				<div class="layer">
+					<h3>Social Media App</h3>
+					<p>The app connects you to the talented people around the world.
+						Download it from play store.
+					</p>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+				
+				
+			</div>
+			<div class="work">
+				<img src="images/work-2.png">
+				<div class="layer">
+					<h3>Music App</h3>
+					<p>The app connects you to the talented people around the world.
+						Download it from play store.
+					</p>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/work-3.png">
+				<div class="layer">
+					<h3>Online Shopping App</h3>
+					<p>The app connects you to the talented people around the world.
+						Download it from play store.
+					</p>
+					<a href="#"><i class="fas fa-external-link-alt"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">See more</a>
+	</div>
+</div>
+<!---------contact------------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fas fa-paper-plane"></i>tatiparthijagadheeswarreddy@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i>+91-9392461113</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/jagadeeshwar.tatiparthi"><i class="fab fa-facebook"></i></a>
+					<a href=""><i class="fab fa-twitter-square"></i></a>
+					<a href="https://www.instagram.com/jaga_ee_reddy/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/jagadheeswar-reddy-tatiparthi-16b4ba237/"><i class="fab fa-linkedin"></i></a>
+				</div>
+				<a href="images/my.cv.pdf.pdf" download class="btn btn2">Download CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright @Jaga Made with <i class="fas fa-heart"></i> by  Jagadheeswarreddy</p>
+	</div>
+</div>
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+	for(tablink of tablinks){
+		tablink.classList.remove("active-link");
+	}
+	for(tabcontent of tabcontents){
+		tabcontent.classList.remove("active-tab");
+	}
+	event.currentTarget.classList.add("active-link");
+	document.getElementById(tabname).classList.add("active-tab");
+   }
+   
+
+
+</script>
+<script>
+	var sidemenu=document.getElementById("sidemenu");
+    
+	function openmenu(){
+		sidemenu.style.right="0";
+	}
+	function closemenu(){
+		sidemenu.style.right="-200px";
+	}
+</script>
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwf8bYfUso5v7USieTQbpMeIuKdEh_bqfWC8hN7J9OXHmKxrRCe4EO6HPdzdUmKDDdy3w/exec'
+	const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => {
+			msg.innerHTML = "Message sent successfully"
+			setTimeout(function(){
+				msg.innerHTML =""
+			},5000)
+			form.reset()
+		})
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+
+</body>
+</html>
